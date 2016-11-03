@@ -1,0 +1,2870 @@
+Model {
+  Name			  "MTT1"
+  Version		  7.9
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.208"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  slprops.hdlmdlprops {
+    $PropName		    "HDLParams"
+    $ObjectID		    1
+    Array {
+      Type		      "Cell"
+      Dimension		      2
+      Cell		      "HDLSubsystem"
+      Cell		      "MultiUAVGimbalControlV1"
+      PropName		      "mdlProps"
+    }
+  }
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Created		  "Thu May 03 09:33:35 2012"
+  Creator		  "Rajnikant.Sharma"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "fkv344"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Oct 28 11:53:22 2013"
+  RTWModifiedTimeStamp	  304861821
+  ModelVersionFormat	  "1.%<AutoIncrement:208>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    2
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "MTT1"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "MTT1"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      3
+      Version		      "1.12.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  4
+	  Version		  "1.12.0"
+	  StartTime		  "0.0"
+	  StopTime		  "100"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  5
+	  Version		  "1.12.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  6
+	  Version		  "1.12.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  7
+	  Version		  "1.12.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Enable All"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  8
+	  Version		  "1.12.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  9
+	  Version		  "1.12.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  10
+	  Version		  "1.12.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  11
+	  Version		  "1.12.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateSLWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      12
+	      Version		      "1.12.0"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      13
+	      Version		      "1.12.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      CodeExecutionProfiling  off
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  14
+	  Version		  "1.12.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 429, 120, 1491, 885 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    3
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RandomNumber
+      Mean		      "0"
+      Variance		      "1"
+      Seed		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToFile
+      Filename		      "untitled.mat"
+      MatrixName	      "ans"
+      SaveFormat	      "Array"
+      Decimation	      "1"
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "MTT1"
+    Location		    [427, 186, 1773, 819]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "552"
+    Block {
+      BlockType		      SubSystem
+      Name		      "3-D Plot"
+      SID		      "186"
+      Ports		      [2]
+      Position		      [705, 23, 820, 107]
+      ZOrder		      -17
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskPromptString	      "FOV of Camera|R_min|map|Number of Targets|Number of UAVs"
+      MaskStyleString	      "edit,edit,edit,edit,edit"
+      MaskVariables	      "cam_fov=@1;R_min=@2;map=@3;NOT=@4;NOU=@5;"
+      MaskTunableValueString  "on,on,on,on,on"
+      MaskCallbackString      "||||"
+      MaskEnableString	      "on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on"
+      MaskInitialization      "% parameters for drawing aircraft\n  % scale size\n  size = 2;\n  fuse_l1    = 7;\n  fu"
+      "se_l2    = 4;\n  fuse_l3    = 15;\n  fuse_w     = 2;\n  wing_l     = 6;\n  wing_w     = 20;\n  tail_l     = 3;\n"
+      "  tail_h     = 3;\n  tailwing_w = 10;\n  tailwing_l = 3;\n  % colors\n  red     = [1, 0, 0];\n  green   = [0, 1,"
+      " 0];\n  blue    = [0, 0, 1];\n  yellow  = [1,1,0];\n  magenta = [0, 1, 1];\n  \n\n% define vertices and faces fo"
+      "r aircraft\n  V = [...\n    fuse_l1,             0,             0;...        % point 1\n    fuse_l2,            "
+      "-fuse_w/2,     -fuse_w/2;... % point 2     \n    fuse_l2,             fuse_w/2,     -fuse_w/2;... % point 3     "
+      "\n    fuse_l2,             fuse_w/2,      fuse_w/2;... % point 4\n    fuse_l2,            -fuse_w/2,      fuse_w"
+      "/2;... % point 5\n   -fuse_l3,             0,             0;...        % point 6\n    0,                   wing_"
+      "w/2,      0;...        % point 7\n   -wing_l,              wing_w/2,      0;...        % point 8\n   -wing_l,   "
+      "          -wing_w/2,      0;...        % point 9\n    0,                  -wing_w/2,      0;...        % point 1"
+      "0\n   -fuse_l3+tailwing_l,  tailwing_w/2,  0;...        % point 11\n   -fuse_l3,             tailwing_w/2,  0;.."
+      ".        % point 12\n   -fuse_l3,            -tailwing_w/2,  0;...        % point 13\n   -fuse_l3+tailwing_l, -t"
+      "ailwing_w/2,  0;...        % point 14\n   -fuse_l3+tailwing_l,  0,             0;...        % point 15\n   -fuse"
+      "_l3+tailwing_l,  0,             -tail_h;...  % point 16\n   -fuse_l3,             0,             -tail_h;...  % "
+      "point 17\n  ];\n  \n  F = [...\n        1,  2,  3,  1;... % nose-top\n        1,  3,  4,  1;... % nose-left\n   "
+      "     1,  4,  5,  1;... % nose-bottom\n        1,  5,  2,  1;... % nose-right\n        2,  3,  6,  2;... % fusela"
+      "ge-top\n        3,  6,  4,  3;... % fuselage-left\n        4,  6,  5,  4;... % fuselage-bottom\n        2,  5,  "
+      "6,  2;... % fuselage-right\n        7,  8,  9, 10;... % wing\n       11, 12, 13, 14;... % tailwing\n        6, 1"
+      "5, 17, 17;... % tail\n        \n  ];  \n  \n  colors = [...\n        yellow;... % nose-top\n        yellow;... %"
+      " nose-left\n        yellow;... % nose-bottom\n        yellow;... % nose-right\n        blue;... % fuselage-top\n"
+      "        blue;... % fuselage-left\n        red;... % fuselage-bottom\n        blue;... % fuselage-right\n        "
+      "green;... % wing\n        green;... % tailwing\n        blue;... % tail\n    ];\n\n  V = size*V;   % rescale ver"
+      "tices\n  Vt=[];\n  Ft=[];"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "P.cam_fov|P.R_min|map|3|1"
+      System {
+	Name			"3-D Plot"
+	Location		[760, 186, 1762, 801]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "12UAVstates+2Gimbal"
+	  SID			  "187"
+	  Position		  [405, 138, 435, 152]
+	  NamePlacement		  "alternate"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Target States"
+	  SID			  "188"
+	  Position		  [385, 228, 415, 242]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Clock
+	  Name			  "Clock"
+	  SID			  "189"
+	  Position		  [405, 180, 425, 200]
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "190"
+	  Ports			  [3, 1]
+	  Position		  [485, 122, 490, 278]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "drawAircraftTarget"
+	  SID			  "191"
+	  Ports			  [1]
+	  Position		  [570, 155, 630, 185]
+	  MATLABFcn		  "drawMultipleAircraftTargets(u,V,F,colors,map,R_min,cam_fov,NOU,NOT,Vt,Ft)"
+	  OutputDimensions	  "0"
+	  SampleTime		  "P.Ts"
+	}
+	Line {
+	  SrcBlock		  "Clock"
+	  SrcPort		  1
+	  Points		  [40, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "12UAVstates+2Gimbal"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  Points		  [0, -30]
+	  DstBlock		  "drawAircraftTarget"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Target States"
+	  SrcPort		  1
+	  Points		  [50, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+      }
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      SID		      "192"
+      Ports		      [1, 1]
+      Position		      [640, 26, 645, 64]
+      ZOrder		      -12
+      ShowName		      off
+      Inputs		      "1"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux2"
+      SID		      "551"
+      Ports		      [2, 1]
+      Position		      [410, 291, 415, 329]
+      ZOrder		      -12
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux4"
+      SID		      "517"
+      Ports		      [2, 1]
+      Position		      [540, 46, 545, 84]
+      ZOrder		      -12
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem"
+      SID		      "364"
+      Ports		      [0, 1]
+      Position		      [15, 324, 115, 366]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Subsystem"
+	Location		[29, 254, 510, 537]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "376"
+	  Ports			  [3, 1]
+	  Position		  [425, 176, 430, 214]
+	  ZOrder		  -12
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "target"
+	  SID			  "367"
+	  Ports			  [0, 1]
+	  Position		  [205, 86, 290, 154]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskPromptString	  "parameters|iitial position|initial velocity|map"
+	  MaskStyleString	  "edit,edit,edit,edit"
+	  MaskVariables		  "P=@1;z0=@2;v0=@3;map=@4;"
+	  MaskTunableValueString  "on,on,on,on"
+	  MaskCallbackString	  "|||"
+	  MaskEnableString	  "on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on"
+	  MaskDisplay		  "image(imread('monstertruck.jpg'))"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "P|[0;200;0]|[P.target_velocity; 0; 0];|map"
+	  System {
+	    Name		    "target"
+	    Location		    [2, 329, 1022, 726]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      S-Function
+	      Name		      "S-Function"
+	      SID		      "368"
+	      Ports		      [0, 1]
+	      Position		      [25, 25, 145, 55]
+	      ShowName		      off
+	      FunctionName	      "target_motion_Init"
+	      Parameters	      "P,map,z0,v0"
+	      EnableBusSupport	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Target"
+	      SID		      "369"
+	      Position		      [215, 93, 245, 107]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "S-Function"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, 60]
+	      DstBlock		      "Target"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "target1"
+	  SID			  "370"
+	  Ports			  [0, 1]
+	  Position		  [205, 191, 290, 259]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskPromptString	  "parameters|iitial position|initial velocity|map"
+	  MaskStyleString	  "edit,edit,edit,edit"
+	  MaskVariables		  "P=@1;z0=@2;v0=@3;map=@4;"
+	  MaskTunableValueString  "on,on,on,on"
+	  MaskCallbackString	  "|||"
+	  MaskEnableString	  "on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on"
+	  MaskDisplay		  "image(imread('monstertruck.jpg'))"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "P|[100;200;0]|[P.target_velocity; 0; 0];|map"
+	  System {
+	    Name		    "target1"
+	    Location		    [232, 294, 552, 577]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      S-Function
+	      Name		      "S-Function"
+	      SID		      "371"
+	      Ports		      [0, 1]
+	      Position		      [25, 25, 145, 55]
+	      ShowName		      off
+	      FunctionName	      "target_motion_Init"
+	      Parameters	      "P,map,z0,v0"
+	      EnableBusSupport	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Target"
+	      SID		      "372"
+	      Position		      [215, 93, 245, 107]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "S-Function"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, 60]
+	      DstBlock		      "Target"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "target2"
+	  SID			  "373"
+	  Ports			  [0, 1]
+	  Position		  [205, 276, 290, 344]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskPromptString	  "parameters|iitial position|initial velocity|map"
+	  MaskStyleString	  "edit,edit,edit,edit"
+	  MaskVariables		  "P=@1;z0=@2;v0=@3;map=@4;"
+	  MaskTunableValueString  "on,on,on,on"
+	  MaskCallbackString	  "|||"
+	  MaskEnableString	  "on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on"
+	  MaskDisplay		  "image(imread('monstertruck.jpg'))"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "P|[100;100;0]|[P.target_velocity; 0; 0];|map"
+	  System {
+	    Name		    "target2"
+	    Location		    [232, 294, 552, 577]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      S-Function
+	      Name		      "S-Function"
+	      SID		      "374"
+	      Ports		      [0, 1]
+	      Position		      [25, 25, 145, 55]
+	      ShowName		      off
+	      FunctionName	      "target_motion_Init"
+	      Parameters	      "P,map,z0,v0"
+	      EnableBusSupport	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Target"
+	      SID		      "375"
+	      Position		      [215, 93, 245, 107]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "S-Function"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, 60]
+	      DstBlock		      "Target"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  "366"
+	  Position		  [455, 188, 485, 202]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "target"
+	  SrcPort		  1
+	  Points		  [60, 0; 0, 65]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "target1"
+	  SrcPort		  1
+	  Points		  [60, 0; 0, -30]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "target2"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, -40; 70, 0; 0, -65]
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem1"
+      SID		      "509"
+      Ports		      [2]
+      Position		      [765, 349, 865, 391]
+      ZOrder		      -17
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskPromptString	      "map|Number of Targets"
+      MaskStyleString	      "edit,edit"
+      MaskVariables	      "map=@1;NOT=@2;"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskInitialization      "% parameters for drawing aircraft\n  % scale size\n  size = 2;\n  fuse_l1    = 7;\n  fu"
+      "se_l2    = 4;\n  fuse_l3    = 15;\n  fuse_w     = 2;\n  wing_l     = 6;\n  wing_w     = 20;\n  tail_l     = 3;\n"
+      "  tail_h     = 3;\n  tailwing_w = 10;\n  tailwing_l = 3;\n  % colors\n  red     = [1, 0, 0];\n  green   = [0, 1,"
+      " 0];\n  blue    = [0, 0, 1];\n  yellow  = [1,1,0];\n  magenta = [0, 1, 1];\n  \n\n% define vertices and faces fo"
+      "r aircraft\n  V = [...\n    fuse_l1,             0,             0;...        % point 1\n    fuse_l2,            "
+      "-fuse_w/2,     -fuse_w/2;... % point 2     \n    fuse_l2,             fuse_w/2,     -fuse_w/2;... % point 3     "
+      "\n    fuse_l2,             fuse_w/2,      fuse_w/2;... % point 4\n    fuse_l2,            -fuse_w/2,      fuse_w"
+      "/2;... % point 5\n   -fuse_l3,             0,             0;...        % point 6\n    0,                   wing_"
+      "w/2,      0;...        % point 7\n   -wing_l,              wing_w/2,      0;...        % point 8\n   -wing_l,   "
+      "          -wing_w/2,      0;...        % point 9\n    0,                  -wing_w/2,      0;...        % point 1"
+      "0\n   -fuse_l3+tailwing_l,  tailwing_w/2,  0;...        % point 11\n   -fuse_l3,             tailwing_w/2,  0;.."
+      ".        % point 12\n   -fuse_l3,            -tailwing_w/2,  0;...        % point 13\n   -fuse_l3+tailwing_l, -t"
+      "ailwing_w/2,  0;...        % point 14\n   -fuse_l3+tailwing_l,  0,             0;...        % point 15\n   -fuse"
+      "_l3+tailwing_l,  0,             -tail_h;...  % point 16\n   -fuse_l3,             0,             -tail_h;...  % "
+      "point 17\n  ];\n  \n  F = [...\n        1,  2,  3,  1;... % nose-top\n        1,  3,  4,  1;... % nose-left\n   "
+      "     1,  4,  5,  1;... % nose-bottom\n        1,  5,  2,  1;... % nose-right\n        2,  3,  6,  2;... % fusela"
+      "ge-top\n        3,  6,  4,  3;... % fuselage-left\n        4,  6,  5,  4;... % fuselage-bottom\n        2,  5,  "
+      "6,  2;... % fuselage-right\n        7,  8,  9, 10;... % wing\n       11, 12, 13, 14;... % tailwing\n        6, 1"
+      "5, 17, 17;... % tail\n        \n  ];  \n  \n  colors = [...\n        yellow;... % nose-top\n        yellow;... %"
+      " nose-left\n        yellow;... % nose-bottom\n        yellow;... % nose-right\n        blue;... % fuselage-top\n"
+      "        blue;... % fuselage-left\n        red;... % fuselage-bottom\n        blue;... % fuselage-right\n        "
+      "green;... % wing\n        green;... % tailwing\n        blue;... % tail\n    ];\n\n  V = size*V;   % rescale ver"
+      "tices\n  Vt=[];\n  Ft=[];"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "map|3"
+      System {
+	Name			"Subsystem1"
+	Location		[162, 265, 910, 882]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Target States"
+	  SID			  "510"
+	  Position		  [350, 143, 380, 157]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Estimated Target States"
+	  SID			  "511"
+	  Position		  [325, 243, 355, 257]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Clock
+	  Name			  "Clock"
+	  SID			  "512"
+	  Position		  [405, 180, 425, 200]
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "513"
+	  Ports			  [3, 1]
+	  Position		  [485, 122, 490, 278]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "drawAircraftTarget"
+	  SID			  "514"
+	  Ports			  [1]
+	  Position		  [570, 155, 630, 185]
+	  MATLABFcn		  "drawTargetsAndCov(u,V,F,colors,map,NOT)"
+	  OutputDimensions	  "0"
+	  SampleTime		  "0.1"
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  Points		  [0, -30]
+	  DstBlock		  "drawAircraftTarget"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Target States"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Estimated Target States"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Clock"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 10]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Target Selection Single Step"
+      SID		      "253"
+      Ports		      [3, 1]
+      Position		      [705, 197, 870, 273]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskPromptString	      "Parameters|number of targets|number of steps|number of uavs"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskVariables	      "P=@1;nt=@2;k=@3;nu=@4;"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "P|3|1|1"
+      System {
+	Name			"Target Selection Single Step"
+	Location		[790, 199, 1288, 499]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "UAV"
+	  SID			  "254"
+	  Position		  [60, 158, 90, 172]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Estimated Target States"
+	  SID			  "257"
+	  Position		  [60, 118, 90, 132]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "gimbal"
+	  SID			  "261"
+	  Position		  [60, 198, 90, 212]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Clock
+	  Name			  "Clock"
+	  SID			  "262"
+	  Position		  [65, 235, 85, 255]
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "259"
+	  Ports			  [4, 1]
+	  Position		  [195, 107, 200, 223]
+	  ZOrder		  -12
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "Select Target to Track"
+	  SID			  "258"
+	  Ports			  [1, 1]
+	  Position		  [230, 132, 295, 168]
+	  MATLABFcn		  "TargetSelectionSingleUAV(u,P,nt,nu,k)"
+	  OutputDimensions	  "1"
+	  SampleTime		  "P.Tg"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Target to track"
+	  SID			  "255"
+	  Position		  [375, 143, 405, 157]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Select Target to Track"
+	  SrcPort		  1
+	  DstBlock		  "Target to track"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  Points		  [0, -15]
+	  DstBlock		  "Select Target to Track"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "gimbal"
+	  SrcPort		  1
+	  Points		  [85, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Estimated Target States"
+	  SrcPort		  1
+	  Points		  [85, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "UAV"
+	  SrcPort		  1
+	  Points		  [85, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Clock"
+	  SrcPort		  1
+	  Points		  [90, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  4
+	}
+      }
+    }
+    Block {
+      BlockType		      ToFile
+      Name		      "To File"
+      SID		      "550"
+      Ports		      [1]
+      Position		      [450, 295, 510, 325]
+      ZOrder		      -6
+      Filename		      "est_target.mat"
+      MatrixName	      "est_target"
+    }
+    Block {
+      BlockType		      ToFile
+      Name		      "To File1"
+      SID		      "552"
+      Ports		      [1]
+      Position		      [605, 70, 665, 100]
+      ZOrder		      -6
+      Filename		      "uavgimbal.mat"
+      MatrixName	      "uavgimbal"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "UAV Sensor System"
+      SID		      "303"
+      Ports		      [2, 5]
+      Position		      [215, 37, 345, 163]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskPromptString	      "number of targets|parameters"
+      MaskStyleString	      "edit,edit"
+      MaskVariables	      "nt=@1;P=@2;"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "3|P"
+      System {
+	Name			"UAV Sensor System"
+	Location		[134, 174, 1340, 831]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Multiple Targets"
+	  SID			  "304"
+	  Position		  [385, 158, 415, 172]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Target to folllowed"
+	  SID			  "355"
+	  Position		  [30, 178, 60, 192]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Camera with gimbal"
+	  SID			  "306"
+	  Ports			  [3, 2]
+	  Position		  [655, 123, 795, 207]
+	  ZOrder		  -17
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Camera with gimbal"
+	    Location		    [253, 185, 1113, 583]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "pointing_pos"
+	      SID		      "307"
+	      Position		      [195, 203, 225, 217]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "multiple targets"
+	      SID		      "308"
+	      Position		      [505, 223, 535, 237]
+	      ZOrder		      -1
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "UAV_xplot"
+	      SID		      "309"
+	      Position		      [468, 45, 482, 75]
+	      ZOrder		      -1
+	      BlockRotation	      270
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Gimbaled Camera For Multiple Targets"
+	      SID		      "310"
+	      Ports		      [3, 2]
+	      Position		      [595, 192, 710, 288]
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      MaskPromptString	      "Parameters|Number of Targets"
+	      MaskStyleString	      "edit,edit"
+	      MaskVariables	      "P=@1;NOT=@2;"
+	      MaskTunableValueString  "on,on"
+	      MaskCallbackString      "|"
+	      MaskEnableString	      "on,on"
+	      MaskVisibilityString    "on,on"
+	      MaskToolTipString	      "on,on"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "P|3"
+	      System {
+		Name			"Gimbaled Camera For Multiple Targets"
+		Location		[73, 223, 672, 608]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Gimbal Commands"
+		  SID			  "311"
+		  Position		  [60, 133, 90, 147]
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "target"
+		  SID			  "312"
+		  Position		  [35, 28, 65, 42]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "UAV_xplot"
+		  SID			  "313"
+		  Position		  [25, 68, 55, 82]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  MATLABFcn
+		  Name			  "Camera"
+		  SID			  "314"
+		  Ports			  [1, 1]
+		  Position		  [360, 105, 420, 135]
+		  MATLABFcn		  "camera_multi_target(u,P,NOT)"
+		  OutputDimensions	  "3*NOT"
+		  SampleTime		  "1/P.cam_fps"
+		}
+		Block {
+		  BlockType		  Clock
+		  Name			  "Clock1"
+		  SID			  "315"
+		  Position		  [260, 175, 280, 195]
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  SID			  "316"
+		  Ports			  [4, 1]
+		  Position		  [320, 27, 325, 208]
+		  ShowName		  off
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "gimbal_"
+		  SID			  "317"
+		  Ports			  [1, 1]
+		  Position		  [145, 125, 205, 155]
+		  FunctionName		  "gimbal"
+		  Parameters		  "P"
+		  EnableBusSupport	  off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "gimbal"
+		  SID			  "318"
+		  Position		  [280, 248, 310, 262]
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "camera"
+		  SID			  "319"
+		  Position		  [445, 113, 475, 127]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "Camera"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "UAV_xplot"
+		  SrcPort		  1
+		  Points		  [85, 0; 0, 20]
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Camera"
+		  SrcPort		  1
+		  DstBlock		  "camera"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "target"
+		  SrcPort		  1
+		  Points		  [75, 0; 0, 15]
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Clock1"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  4
+		}
+		Line {
+		  SrcBlock		  "Gimbal Commands"
+		  SrcPort		  1
+		  DstBlock		  "gimbal_"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "gimbal_"
+		  SrcPort		  1
+		  Points		  [10, 0]
+		  Branch {
+		    DstBlock		    "Mux"
+		    DstPort		    3
+		  }
+		  Branch {
+		    Points		    [0, 115]
+		    DstBlock		    "gimbal"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Point Gimbal"
+	      SID		      "320"
+	      Ports		      [3, 1]
+	      Position		      [285, 171, 450, 249]
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Point Gimbal"
+		Location		[494, 373, 949, 668]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "uav_xplot"
+		  SID			  "321"
+		  Position		  [75, 113, 105, 127]
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "pointing pos"
+		  SID			  "322"
+		  Position		  [75, 63, 105, 77]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "gimbal"
+		  SID			  "323"
+		  Position		  [75, 163, 105, 177]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  SID			  "324"
+		  Ports			  [3, 1]
+		  Position		  [140, 48, 145, 192]
+		  ShowName		  off
+		  Inputs		  "3"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  MATLABFcn
+		  Name			  "Point Gimbal"
+		  SID			  "325"
+		  Ports			  [1, 1]
+		  Position		  [180, 105, 240, 135]
+		  MATLABFcn		  "point_gimbal(u,P)"
+		  OutputDimensions	  "2"
+		  SampleTime		  "P.Ts"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Gimbal Commands"
+		  SID			  "326"
+		  Position		  [305, 113, 335, 127]
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "Point Gimbal"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "uav_xplot"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Point Gimbal"
+		  SrcPort		  1
+		  DstBlock		  "Gimbal Commands"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "pointing pos"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "gimbal"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  3
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "camera_data"
+	      SID		      "327"
+	      Position		      [810, 248, 840, 262]
+	      ZOrder		      -2
+	      NamePlacement	      "alternate"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "gimbal_data"
+	      SID		      "328"
+	      Position		      [825, 173, 855, 187]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Gimbaled Camera For Multiple Targets"
+	      SrcPort		      1
+	      Points		      [0, -5]
+	      Branch {
+		Points			[0, -60; -550, 0; 0, 85]
+		DstBlock		"Point Gimbal"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[0, 20; 65, 0; 0, -50]
+		DstBlock		"gimbal_data"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Point Gimbal"
+	      SrcPort		      1
+	      DstBlock		      "Gimbaled Camera For Multiple Targets"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gimbaled Camera For Multiple Targets"
+	      SrcPort		      2
+	      Points		      [40, 0; 0, -10]
+	      DstBlock		      "camera_data"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "multiple targets"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 10]
+	      DstBlock		      "Gimbaled Camera For Multiple Targets"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "pointing_pos"
+	      SrcPort		      1
+	      DstBlock		      "Point Gimbal"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "UAV_xplot"
+	      SrcPort		      1
+	      Points		      [0, 45; -5, 0]
+	      Branch {
+		Points			[-220, 0; 0, 60]
+		DstBlock		"Point Gimbal"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[5, 0; 0, 145]
+		DstBlock		"Gimbaled Camera For Multiple Targets"
+		DstPort			3
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Geolocation"
+	  SID			  "435"
+	  Ports			  [3, 1]
+	  Position		  [915, 267, 1040, 343]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskPromptString	  "Parameters|Number of Targets"
+	  MaskStyleString	  "edit,edit"
+	  MaskVariables		  "P=@1;nt=@2;"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "P|3"
+	  System {
+	    Name		    "Geolocation"
+	    Location		    [8, 93, 1012, 750]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "uav"
+	      SID		      "436"
+	      Position		      [15, 68, 45, 82]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "gimbal"
+	      SID		      "437"
+	      Position		      [75, 128, 105, 142]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "camera"
+	      SID		      "438"
+	      Position		      [75, 58, 105, 72]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Clock
+	      Name		      "Clock"
+	      SID		      "439"
+	      Position		      [75, 160, 95, 180]
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "440"
+	      Ports		      [4, 1]
+	      Position		      [140, 45, 145, 190]
+	      ShowName		      off
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      RandomNumber
+	      Name		      "Random\nNumber"
+	      SID		      "441"
+	      Position		      [15, 120, 45, 150]
+	      ZOrder		      -15
+	      Mean		      "zeros(16,1)"
+	      Variance		      "[P.sigma_measurement_n; P.sigma_measurement_e; P.sigma_measurement_h;zeros(3,1);0.0*ones(3,1);"
+	      "zeros(7,1)]"
+	      SampleTime	      "0.1"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      SID		      "442"
+	      Ports		      [2, 1]
+	      Position		      [80, 90, 100, 110]
+	      ZOrder		      -18
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "geolocation"
+	      SID		      "443"
+	      Ports		      [1, 1]
+	      Position		      [180, 105, 240, 135]
+	      MATLABFcn		      "geolocationMultiTargetGimCont2(u,P,nt)"
+	      OutputDimensions	      "30*nt"
+	      SampleTime	      "P.Tc"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "est target pos"
+	      SID		      "444"
+	      Position		      [350, 113, 380, 127]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Clock"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "gimbal"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "camera"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "geolocation"
+	      SrcPort		      1
+	      DstBlock		      "est target pos"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "geolocation"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "uav"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, 25]
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Random\nNumber"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -10]
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "Interpreted MATLAB\nFunction"
+	  SID			  "362"
+	  Ports			  [1, 1]
+	  Position		  [495, 60, 565, 90]
+	  MATLABFcn		  "SelectedTarget1(u,P,nt)"
+	  OutputDimensions	  "6"
+	  SampleTime		  "P.Tg"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "363"
+	  Ports			  [2, 1]
+	  Position		  [465, 56, 470, 94]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "UAV"
+	  SID			  "343"
+	  Ports			  [1, 2]
+	  Position		  [240, 164, 340, 206]
+	  ZOrder		  -17
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "UAV"
+	    Location		    [757, 326, 1765, 709]
+	    Open		    on
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Target"
+	      SID		      "344"
+	      Position		      [110, 103, 140, 117]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "GM"
+	      SID		      "539"
+	      Ports		      [1, 2]
+	      Position		      [265, 159, 365, 201]
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      MaskPromptString	      "nortth|east|altitude|airspeed|COurse Angle|UAV Parameters"
+	      MaskStyleString	      "edit,edit,edit,edit,edit,edit"
+	      MaskVariables	      "pn0=@1;pe0=@2;pd0=@3;Va0=@4;psi0=@5;P=@6;"
+	      MaskTunableValueString  "on,on,on,on,on,on"
+	      MaskCallbackString      "|||||"
+	      MaskEnableString	      "on,on,on,on,on,on"
+	      MaskVisibilityString    "on,on,on,on,on,on"
+	      MaskToolTipString	      "on,on,on,on,on,on"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "20|200|-100|P.Va0|P.psi0|P"
+	      System {
+		Name			"GM"
+		Location		[707, 412, 1205, 712]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  SID			  "540"
+		  Position		  [65, 113, 95, 127]
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  "Demux"
+		  SID			  "542"
+		  Ports			  [1, 2]
+		  Position		  [255, 96, 260, 134]
+		  ShowName		  off
+		  Outputs		  "[16;12]"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "S-Function"
+		  SID			  "544"
+		  Ports			  [1, 1]
+		  Position		  [160, 105, 220, 135]
+		  FunctionName		  "guidance_model_new"
+		  Parameters		  "P,pn0,pe0,pd0,psi0,Va0"
+		  EnableBusSupport	  off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "state"
+		  SID			  "541"
+		  Position		  [360, 103, 390, 117]
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "x_plot"
+		  SID			  "543"
+		  Position		  [360, 143, 390, 157]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  1
+		  Points		  [40, 0; 0, 5]
+		  DstBlock		  "state"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  2
+		  Points		  [40, 0; 0, 25]
+		  DstBlock		  "x_plot"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "S-Function"
+		  SrcPort		  1
+		  Points		  [5, 0; 0, -5]
+		  DstBlock		  "Demux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "S-Function"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "targte_follow"
+	      SID		      "346"
+	      Ports		      [2, 1]
+	      Position		      [275, 59, 375, 101]
+	      ZOrder		      -17
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      MaskPromptString	      "Parameters|height|airspeed|Flag"
+	      MaskStyleString	      "edit,edit,edit,edit"
+	      MaskVariables	      "P=@1;h_d=@2;Va_d=@3;flag=@4;"
+	      MaskTunableValueString  "on,on,on,on"
+	      MaskCallbackString      "|||"
+	      MaskEnableString	      "on,on,on,on"
+	      MaskVisibilityString    "on,on,on,on"
+	      MaskToolTipString	      "on,on,on,on"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "P|100|P.Va0|2"
+	      System {
+		Name			"targte_follow"
+		Location		[391, 274, 889, 557]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "target"
+		  SID			  "347"
+		  Position		  [370, 123, 400, 137]
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "state"
+		  SID			  "348"
+		  Position		  [370, 168, 400, 182]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Clock
+		  Name			  "Clock"
+		  SID			  "349"
+		  Position		  [375, 210, 395, 230]
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  SID			  "350"
+		  Ports			  [3, 1]
+		  Position		  [525, 104, 530, 246]
+		  ShowName		  off
+		  Inputs		  "3"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  MATLABFcn
+		  Name			  "Target_follow"
+		  SID			  "351"
+		  Ports			  [1, 1]
+		  Position		  [560, 157, 625, 193]
+		  MATLABFcn		  "target_follow(u,P,h_d,Va_d,flag)"
+		  OutputDimensions	  "3"
+		  SampleTime		  "P.Ts"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "commands"
+		  SID			  "352"
+		  Position		  [665, 168, 695, 182]
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  "state"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Clock"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "target"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "Target_follow"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Target_follow"
+		  SrcPort		  1
+		  DstBlock		  "commands"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "state"
+	      SID		      "353"
+	      Position		      [505, 138, 535, 152]
+	      ZOrder		      -2
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "xplot"
+	      SID		      "354"
+	      Position		      [465, 198, 495, 212]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "GM"
+	      SrcPort		      1
+	      Points		      [0, -5; 20, 0; 0, 5; 15, 0; 0, -20]
+	      Branch {
+		Points			[0, -10; -145, 0]
+		DstBlock		"targte_follow"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, -5]
+		DstBlock		"state"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "targte_follow"
+	      SrcPort		      1
+	      Points		      [0, 45; -165, 0; 0, 55]
+	      DstBlock		      "GM"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Target"
+	      SrcPort		      1
+	      Points		      [75, 0; 0, -45; 40, 0]
+	      DstBlock		      "targte_follow"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "GM"
+	      SrcPort		      2
+	      Points		      [15, 0; 0, 15]
+	      DstBlock		      "xplot"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Camera "
+	  SID			  "305"
+	  Position		  [895, 138, 925, 152]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Gimbal"
+	  SID			  "356"
+	  Position		  [895, 178, 925, 192]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "xplot"
+	  SID			  "357"
+	  Position		  [570, 238, 600, 252]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "UAVstates"
+	  SID			  "358"
+	  Position		  [380, 123, 410, 137]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Estimated States"
+	  SID			  "445"
+	  Position		  [1080, 298, 1110, 312]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "UAV"
+	  SrcPort		  2
+	  Points		  [195, 0]
+	  Branch {
+	    DstBlock		    "Camera with gimbal"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [0, 50]
+	    DstBlock		    "xplot"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Multiple Targets"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "Camera with gimbal"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -100]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Camera with gimbal"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "Camera "
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 185]
+	    DstBlock		    "Geolocation"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "Camera with gimbal"
+	  SrcPort		  2
+	  Points		  [65, 0]
+	  Branch {
+	    DstBlock		    "Gimbal"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 120]
+	    DstBlock		    "Geolocation"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "UAV"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    Points		    [15, 0]
+	    DstBlock		    "UAVstates"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 105]
+	    DstBlock		    "Geolocation"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Interpreted MATLAB\nFunction"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Target to folllowed"
+	  SrcPort		  1
+	  Points		  [105, 0; 0, -100]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Interpreted MATLAB\nFunction"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    Points		    [40, 0; 0, 60]
+	    DstBlock		    "Camera with gimbal"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -35; -360, 0]
+	    DstBlock		    "UAV"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Geolocation"
+	  SrcPort		  1
+	  DstBlock		  "Estimated States"
+	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "545"
+	  Name			  "Estimated position of the target should be \nbe fed in instead of real one "
+	  Position		  [324, 232]
+	}
+	Annotation {
+	  SID			  "546"
+	  Name			  "Multi Target Geo-localization using a\nFixed Wing Unmanned Aerial Vehicle"
+	  Position		  [360, 691]
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "3-D Plot"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Subsystem"
+      SrcPort		      1
+      Points		      [35, 0; 0, -20]
+      Branch {
+	Points			[0, -250]
+	Branch {
+	  Points		  [45, 0]
+	  DstBlock		  "UAV Sensor System"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -65; 700, 0; 0, 120]
+	  Branch {
+	    Points		    [-165, 0]
+	    DstBlock		    "3-D Plot"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [35, 0; 0, 170; -175, 0; 0, 25; 35, 0]
+	    DstBlock		    "Subsystem1"
+	    DstPort		    1
+	  }
+	}
+      }
+      Branch {
+	Points			[0, -5]
+	DstBlock		"Mux2"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Target Selection Single Step"
+      SrcPort		      1
+      Points		      [35, 0; 0, 200; -730, 0; 0, -300]
+      DstBlock		      "UAV Sensor System"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "UAV Sensor System"
+      SrcPort		      5
+      Points		      [15, 0; 0, 85; 35, 0]
+      Branch {
+	Points			[210, 0]
+	Branch {
+	  DstBlock		  "Target Selection Single Step"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, 145]
+	  DstBlock		  "Subsystem1"
+	  DstPort		  2
+	}
+      }
+      Branch {
+	Points			[-5, 0]
+	DstBlock		"Mux2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "UAV Sensor System"
+      SrcPort		      3
+      Points		      [20, 0; 0, -55; 155, 0]
+      DstBlock		      "Mux4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "UAV Sensor System"
+      SrcPort		      2
+      Points		      [0, 10; 115, 0]
+      Branch {
+	Points			[60, 0]
+	DstBlock		"Mux4"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 175]
+	DstBlock		"Target Selection Single Step"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "Mux4"
+      SrcPort		      1
+      Points		      [10, 0; 0, -20; 25, 0]
+      Branch {
+	DstBlock		"Mux1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -5; 5, 0]
+	DstBlock		"To File1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "UAV Sensor System"
+      SrcPort		      4
+      Points		      [30, 0; 0, -5; 280, 0; 0, 90]
+      DstBlock		      "Target Selection Single Step"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux2"
+      SrcPort		      1
+      DstBlock		      "To File"
+      DstPort		      1
+    }
+    Annotation {
+      SID		      "547"
+      Name		      "I think the sampeling of filter should be equal to camera speed"
+      Position		      [281, 536]
+    }
+    Annotation {
+      SID		      "548"
+      Name		      "Multi Target Geo-localization using a\nFixed Wing Unmanned Aerial Vehicle"
+      Position		      [235, 481]
+    }
+    Annotation {
+      SID		      "549"
+      Name		      "Afterinformation fusion the estimates are not consistent"
+      Position		      [140, 556]
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.6 (R2011b) dated Jan 25 2012, 21:03:37
+#
+#
+
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "MTT1"
+    created		    "22-May-2012 10:59:05"
+    isLibrary		    0
+    firstTarget		    2
+    sfVersion		    76014001.00040001
+  }
+  target {
+    id			    2
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}
